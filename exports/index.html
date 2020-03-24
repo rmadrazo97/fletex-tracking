@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>fletex-tracking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="padding: 25px;">
+    <div class="row">
+        <div class="col" style="text-align: center;">
+            <h2>Fletex Tracking</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h4>Flete #<span id="fleteID" style="margin-left: 5px; font-weight: 400;">id</span></h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h4>Status<span id="fleteStatus" style="margin-left: 5px; font-weight: 400;">en camino</span></h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h4>Fecha y Hora<span id="fleteFechaHora" style="margin-left: 5px; font-weight: 400;">&nbsp;dd/mm/yyyy hh:mm&nbsp;</span></h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h4>Tracking</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col" style="text-align: center;"><img id="mapaImg" src="assets/img/mapGif.gif" style="max-width: 60%; margin: 10px;"></div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h5>Punto de Partida:<span id="dirUno" style="margin-left: 5px; font-weight: 400; font-size: 16px;">direccion</span></h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h5>Punto de Llegada:<span id="dirDos" style="margin-left: 5px; font-weight: 400; font-size: 16px;">direccion</span></h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col" style="text-align: center; margin-top: 10px;">
+            <h4>Reportes</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col" style="margin-top: 5px;background-color: rgb(236,236,236);border-radius: 10px;padding-left: 5px;padding-right: 5px; margin-left: 10px; margin-right: 10px; padding-top: 10px; padding-bottom: 10px;">
+            <div class="row">
+                <div class="col">
+                    <h5>hh:mm - mensaje1</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h5>hh:mm - mensaje2</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h4>Datos del Paquete</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col" style="text-align: center;">
+            <h5 style="display: inline-block;">Tamaño:<span id="paqueteSize" style="margin-left:10px; margin-right: 5px; font-weight: 400;">pequeño</span></h5><img id="paqueteSizeImg" style="margin: 5px; max-width: 110px;" src="assets/img/pequeno.png"></div>
+    </div>
+    <div class="row">
+        <div class="col" style="text-align: justify;">
+            <h5 style="display: inline-block;">Descripción:<span id="paqueteDesc" style="margin-left:10px; margin-right: 5px; font-weight: 400; font-size: 16px;">Información del paquete</span></h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col" style="text-align: justify;">
+            <h5 style="display: inline-block;">Instrucciones de Entrega:<span id="paqueteIns" style="margin-left:10px; margin-right: 5px; font-weight: 400; font-size: 16px;">Información del paquete</span></h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h4>Imágenes de Referencia</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col" style="text-align: center;"><img id="refImg" style="margin: 20px; max-width: 30%; border-radius: 10px;" src="assets/img/boxes.png"><img id="refImg-3" style="margin: 20px; max-width: 30%; border-radius: 10px;" src="assets/img/boxes.png"><img id="refImg-2" style="margin: 20px; max-width: 30%; border-radius: 10px;"
+                src="assets/img/boxes.png"><img id="refImg-1" style="margin: 20px; max-width: 30%; border-radius: 10px;" src="assets/img/boxes.png"></div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h4>Datos del Fletero</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-4" style="text-align: center;"><img id="fleteroImg" src="assets/img/silh.jpg" style="width: 100px; height: 100px;border-radius: 50%; object-fit: cover;"></div>
+        <div class="col align-self-center" style="text-align: justify;">
+            <h5 style="display: inline-block;">Nombre:<span id="fleteroNombre" style="margin-left:10px; margin-right: 5px; font-weight: 400; font-size: 16px;">Nombre Fletero&nbsp;</span></h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col" style="text-align: center;">
+            <h5 style="display: inline-block;">Calificación:<span id="fleteroRating-1" style="margin-left:10px; margin-right: 0px; font-weight: 700; font-size: 16px;"><i class="fa fa-star" style="font-size: 17px;"></i>&nbsp;</span><span id="fleteroRating" style="margin-left:2px; margin-right: 0px; font-weight: 700; font-size: 17px;">4&nbsp;</span>
+                <span
+                    style="margin-left:1px; margin-right: 5px; font-weight: 700; font-size: 17px;">/ 5&nbsp;</span>
+            </h5>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
